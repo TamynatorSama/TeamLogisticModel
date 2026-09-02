@@ -9,11 +9,3 @@ def calculate_rmse(observed, predicted):
     mean_squared_error = np.mean(squared_errors)
     rmse = np.sqrt(mean_squared_error)
     return rmse
-
-
-if __name__ == "__main__":
-    observed = [10, 20, 30, 40]
-    predicted = [12, 18, 29, 43]
-    error = calculate_rmse(observed, predicted)
-    print(error)
-
